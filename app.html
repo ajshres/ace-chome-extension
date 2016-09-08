@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ace</title>
+</head>
+<body>
+
+<style>
+
+    body {
+        margin: 0px;
+    }
+
+    .ace-content{
+        display:none;
+    }
+
+    .ace-content-active{
+        display:block;
+    }
+    
+    #editor,.ace-content { 
+        position: absolute;
+        top: 21px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+	.btn-settings {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 10;
+	}
+
+    .tab {
+        float:left;
+        width:60px;
+        padding:5px;
+    }
+    .add-button {
+        position: absolute;
+        right: 32px;
+        top: 0;
+        z-index: 11;
+        font-size: 16px;
+        padding: 0 4px;
+        border: 1px solid #ccc;
+    }
+
+</style>
+<div class="tabs">
+    <div class="tab active" data-id="editor">
+        Tab 1
+    </div>
+</div>
+<div class="add-button">+</div>
+<div id="editor" class="ace-content ace-content-active"></div>
+<button class="btn-settings">&#9881;</button>
+
+<!-- <button class="monokai">Monokai</button> -->
+<!-- <button class="none">None</button> -->
+<!-- <button class="size-minus">-</button> -->
+<!-- <button class="size-plus">+</button> -->
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="ace.js"></script>
+<script src="app.js"></script>
+    
+</body>
+</html>
