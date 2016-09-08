@@ -1,0 +1,56 @@
+    body {
+        margin: 0px;
+    }
+
+    #editor,.ace-content { 
+        position: absolute!important;
+        top: 21px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    .active {
+        font-weight: bolder;
+        background-color: white;
+        color: black;
+        border: 1px solid #dddddd;
+    }
+
+    .ace-content {
+        display:none;
+    }
+
+
+
+
+    .ace-content-active,.ace-content.ace-content-active {
+        display:block !important;
+    }
+
+    .add-button {
+        background-color: #dddddd;   
+    }
+
+	.btn-settings {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 10;
+	}
+
+    .tab {
+        float:left;
+        width:60px;
+        padding:5px;
+    }
+    .add-button {
+        position: absolute;
+        right: 32px;
+        top: 0;
+        z-index: 11;
+        font-size: 16px;
+        padding: 0 4px;
+        border: 1px solid #ccc;
+    }
